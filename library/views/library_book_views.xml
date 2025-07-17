@@ -4,7 +4,7 @@
         <field name="name">library.book.view.tree</field>
         <field name="model">library.book</field>
         <field name="arch" type="xml">
-            <tree string="Book tree">
+            <tree string="Book List">
                 <field name="name"/>
                 <field name="isbn_13"/>
             </tree>
