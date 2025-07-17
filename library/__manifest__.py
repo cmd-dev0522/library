@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     "name": "Library",
-    "version": "17.0.1.0",
+    "version": "18.0.1.0",
     "depends": [
         "base"
     ],
