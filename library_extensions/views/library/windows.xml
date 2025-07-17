@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data>
+    
+        <record id="library_book_category_action" model="ir.actions.act_window">
+            <field name="name">Books Category</field>
+            <field name="res_model">library.book.category</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[]</field>
+            <field name="view_ids" eval="[(5, 0, 0),
+                (0, 0, {'view_mode': 'tree', 'view_id': ref('library_extensions.library_book_category_view_tree')}),
+                (0, 0, {'view_mode': 'form', 'view_id': ref('library_extensions.library_book_category_view_form')}),
+            ]"/>
+            <field name="context">{ 
+                'tree_view_ref':'library_extensions.library_book_category_view_tree', 
+                'form_view_ref':'library_extensions.library_book_category_view_form'
+                }</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create Book Categories
+                </p>
+            </field>
+        </record>
+    
+    </data>
+    
+
+</odoo>
